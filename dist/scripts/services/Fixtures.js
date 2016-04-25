@@ -10,13 +10,24 @@
             year: '1881',
             albumArtUrl: '/assets/images/album_covers/01.png',
             songs: [
-                { title: 'Blue', duration: 161.71, audioUrl: '/assets/music/Fuel' },
-                { title: 'Green', duration: 103.96, audioUrl: '/assets/music/Master Of Puppets' },
-                { title: 'Red', duration: 268.45, audioUrl: '/assets/music/Ride The Lightning' },
-                { title: 'Pink', duration: 153.14, audioUrl: '/assets/music/The Unforgiven' },
-                { title: 'Magenta', duration: 374.22, audioUrl: '/assets/music/witj' }
+                { title: 'Blue', duration: '4:30', audioUrl: '/assets/music/Fuel' },
+                { title: 'Green', duration: '8:36', audioUrl: '/assets/music/Master Of Puppets' },
+                { title: 'Red', duration: '6:37', audioUrl: '/assets/music/Ride The Lightning' },
+                { title: 'Pink', duration: '6:27', audioUrl: '/assets/music/The Unforgiven' },
+                { title: 'Magenta', duration: '4:59', audioUrl: '/assets/music/witj' }
             ]
+//            songs: [
+//                { title: 'Blue', duration: '4:30', audioUrl: '/assets/music/blue' },
+//                { title: 'Green', duration: '8:36', audioUrl: '/assets/music/green' },
+//                { title: 'Red', duration: '6:37', audioUrl: '/assets/music/magenta' },
+//                { title: 'Pink', duration: '6:27', audioUrl: '/assets/music/pink' },
+//                { title: 'Magenta', duration: '4:59', audioUrl: '/assets/music/red' }
+//            ]
         };
+        
+        
+        
+
 
         // Another example album
         var albumMarconi = {

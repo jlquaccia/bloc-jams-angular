@@ -85,6 +85,16 @@
          */
         SongPlayer.volume = null;
         
+        SongPlayer.getSongDuration = function() {
+//            song = song || SongPlayer.currentSong;
+
+            if (currentBuzzObject === null) {
+                return '';
+            } else {
+                return currentBuzzObject.getDuration();
+            }
+        };
+        
         /**
          * @function play
          * @desc Decides whether to play a new song or pause the current one
@@ -108,7 +118,7 @@
          * @param {Object} song
          */
         SongPlayer.pause = function(song) {
-            song = song || SongPlayer.currentSong
+            song = song || SongPlayer.currentSong;
             currentBuzzObject.pause();
             song.playing = false;
         };
