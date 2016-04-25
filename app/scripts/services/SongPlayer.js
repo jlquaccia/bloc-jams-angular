@@ -85,9 +85,12 @@
          */
         SongPlayer.volume = null;
         
+        /**
+         * @function getSongDuration
+         * @desc Retrieves the duration of the currently playing song
+         * @param none
+         */
         SongPlayer.getSongDuration = function() {
-//            song = song || SongPlayer.currentSong;
-
             if (currentBuzzObject === null) {
                 return '';
             } else {
