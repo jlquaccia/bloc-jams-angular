@@ -50,6 +50,7 @@
         var playSong = function(song) {
             currentBuzzObject.play();
             song.playing = true;
+            SongPlayer.currentSong.isMute = false;
         };
         
         /**
@@ -192,10 +193,23 @@
             }
         };
         
-        SongPlayer.toggleMute = function() {
-            if (currentBuzzObject) {
-                currentBuzzObject.toggleMute();
-                console.log(currentBuzzObject.isMuted());
+//        SongPlayer.toggleMute = function() {
+//            if (currentBuzzObject) {
+//                currentBuzzObject.toggleMute();
+//            }
+//        };
+        
+        SongPlayer.muteSong = function() {
+            if(currentBuzzObject) {
+                currentBuzzObject.mute();
+                SongPlayer.currentSong.isMute = true;
+            }
+        };
+        
+        SongPlayer.unmuteSong = function() {
+            if(currentBuzzObject) {
+                currentBuzzObject.unmute();
+                SongPlayer.currentSong.isMute = false;
             }
         };
         
