@@ -192,6 +192,13 @@
             }
         };
         
+        SongPlayer.toggleMute = function() {
+            if (currentBuzzObject) {
+                currentBuzzObject.toggleMute();
+                console.log(currentBuzzObject.isMuted());
+            }
+        };
+        
         return SongPlayer;
     }
     
