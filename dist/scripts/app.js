@@ -35,6 +35,6 @@
     }
     
     angular
-        .module('blocJams', ['ui.router'])
+        .module('blocJams', ['ui.router', 'firebase'])
         .config(config);
 })();
