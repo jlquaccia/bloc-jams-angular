@@ -111,3 +111,12 @@ body {
 .clearfix::after {
     clear: both;
 }
+
+.help-block {
+    border-radius: 2px;
+    background-color: #E91E63;
+}
+
+.has-error .help-block {
+    color: #FFF;
+}
