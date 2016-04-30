@@ -1,11 +1,11 @@
 (function() {
-    function LoginCtrl($scope, $firebaseSimpleLogin) {
+    function LoginCtrl($scope, $firebaseAuth) {
         $scope.SignIn = function(e) {
             e.preventDefault();
             var username = $scope.user.email;
             var password = $scope.user.password;
             
-            loginObj.$login('password', {
+            loginObj.$authWithPassword({
                 email: username,
                 password: password
             })
@@ -19,9 +19,9 @@
         };
         
         var firebaseObj = new Firebase("https://jq-bloc-jams.firebaseIO.com");
-        var loginObj = $firebaseSimpleLogin(firebaseObj);
+        var loginObj = $firebaseAuth(firebaseObj);
     }
     
     angular.module('blocJams')
-        .controller('LoginCtrl', ['$scope', '$firebaseSimpleLogin', LoginCtrl]);
+        .controller('LoginCtrl', ['$scope', '$firebaseAuth', LoginCtrl]);
 })();
