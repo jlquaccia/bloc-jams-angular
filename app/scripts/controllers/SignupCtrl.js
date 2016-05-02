@@ -13,7 +13,7 @@
                         .then(function() {
                             // do things if success
                             console.log('User creation success');
-                            $location.path('/login')
+                            $location.path('/collection')
                         }, function(error) {
                             // do things if failure
                             console.log(error);
