@@ -14,6 +14,7 @@
                 console.log('Authentication Successful');
                 $location.path('/collection');
                 $rootScope.userEmail = user.password.email;
+                localStorage.setItem("userEmail", $rootScope.userEmail);
             }, function(error) {
                 // Failure callback
                 console.log('Authentication Failure');

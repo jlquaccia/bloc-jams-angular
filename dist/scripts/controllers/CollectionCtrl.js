@@ -10,7 +10,12 @@
             console.log('logged out');
             $location.path('/');
             $rootScope.userEmail = false;
+            localStorage.removeItem('userEmail');
         };
+        
+        if (!$rootScope.userEmail) {
+            $rootScope.userEmail = localStorage.getItem("userEmail");
+        }
     }
     
     angular
