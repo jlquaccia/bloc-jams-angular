@@ -1,10 +1,9 @@
 (function() {
-    function CollectionCtrl($scope, Fixtures, UserInfo) {
+    function CollectionCtrl($scope, Fixtures) {
         this.albums = Fixtures.getCollection(12);
-        $scope.username = UserInfo.getUser();
     }
     
     angular
         .module('blocJams')
-        .controller('CollectionCtrl', ['$scope', 'Fixtures', 'UserInfo', CollectionCtrl]);
+        .controller('CollectionCtrl', ['$scope', 'Fixtures', CollectionCtrl]);
 })();

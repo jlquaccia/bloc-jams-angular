@@ -1,5 +1,5 @@
 (function() {
-    function SignupCtrl($scope, $location, $firebaseAuth) {
+    function SignupCtrl($scope, $location, $firebaseAuth, $rootScope) {
         var firebaseObj = new Firebase("https://jq-bloc-jams.firebaseIO.com");
         var auth = $firebaseAuth(firebaseObj);
         
@@ -13,6 +13,7 @@
                         .then(function() {
                             // do things if success
                             console.log('User creation success');
+                            $rootScope.userEmail = user.password.email;
                             $location.path('/collection')
                         }, function(error) {
                             // do things if failure
@@ -26,5 +27,5 @@
     }
     
     angular.module('blocJams')
-        .controller('SignupCtrl', ['$scope', '$location', '$firebaseAuth', SignupCtrl]);
+        .controller('SignupCtrl', ['$scope', '$location', '$firebaseAuth', '$rootScope', SignupCtrl]);
 })();

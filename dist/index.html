@@ -27,10 +27,14 @@
           <img src="assets/images/bloc_jams_logo.png" alt="bloc jams logo" class="logo">
       </a>
       <div class="links-container">
-<!--          <a class="navbar-link">Hello {{UserInfo.username}}!</a>-->
-          <a ui-sref="login" class="navbar-link">Login</a>
-          <a ui-sref="signup" class="navbar-link">Sign Up</a>
-          <a ui-sref="collection" class="navbar-link">Collection</a>
+          <!-- Show if no user is logged in -->
+          <a ui-sref="login" class="navbar-link" ng-hide="userEmail">Login</a>
+          <a ui-sref="signup" class="navbar-link" ng-hide="userEmail">Sign Up</a>
+          
+          <!-- Show if user is logged in -->
+          <a class="navbar-link" ng-show="userEmail">Hello {{userEmail}}!</a>
+          <a ui-sref="collection" class="navbar-link" ng-show="userEmail">Collection</a>
+          <a class="navbar-link" ng-show="userEmail">Logout</a>
       </div>
     </nav> <!-- navigation bar -->
     
@@ -50,7 +54,6 @@
     <script src="/scripts/app.js"></script>
     <script src="/scripts/services/Fixtures.js"></script>
     <script src="/scripts/services/SongPlayer.js"></script>
-    <script src="/scripts/services/UserInfo.js"></script>
     <script src="/scripts/controllers/LandingCtrl.js"></script>
     <script src="/scripts/controllers/CollectionCtrl.js"></script>
     <script src="/scripts/controllers/AlbumCtrl.js"></script>

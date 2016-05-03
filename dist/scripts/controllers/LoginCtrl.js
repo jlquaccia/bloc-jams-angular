@@ -1,5 +1,5 @@
 (function() {
-    function LoginCtrl($scope, $location, UserInfo, $firebaseAuth) {
+    function LoginCtrl($scope, $location, $firebaseAuth, $rootScope) {
         $scope.SignIn = function(e) {
             e.preventDefault();
             var username = $scope.user.email;
@@ -13,7 +13,7 @@
                 // Success callback
                 console.log('Authentication Successful');
                 $location.path('/collection');
-                UserInfo.setUser(user.password.email);
+                $rootScope.userEmail = user.password.email;
             }, function(error) {
                 // Failure callback
                 console.log('Authentication Failure');
@@ -25,5 +25,5 @@
     }
     
     angular.module('blocJams')
-        .controller('LoginCtrl', ['$scope', '$location', 'UserInfo', '$firebaseAuth', LoginCtrl]);
+        .controller('LoginCtrl', ['$scope', '$location', '$firebaseAuth', '$rootScope', LoginCtrl]);
 })();
