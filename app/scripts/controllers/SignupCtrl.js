@@ -13,8 +13,9 @@
                         .then(function() {
                             // do things if success
                             console.log('User creation success');
-                            $rootScope.userEmail = user.password.email;
-                            $location.path('/collection')
+                            $rootScope.userEmail = email;
+                            $location.path('/collection');
+                            localStorage.setItem("userEmail", $rootScope.userEmail);
                         }, function(error) {
                             // do things if failure
                             console.log(error);
