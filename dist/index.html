@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!--  Google Fonts  -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
     <!--  Ionicons  -->
     <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!--  Normalize  -->
@@ -20,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="/styles/player_bar.css">
     <link rel="stylesheet" type="text/css" href="/styles/signup.css">
     <link rel="stylesheet" type="text/css" href="/styles/login.css">
+    <link rel="stylesheet" type="text/css" href="/styles/profile.css">
 </head>
 <body>
     <nav class="navbar">
@@ -34,6 +36,7 @@
           <!-- Show if user is logged in -->
           <a class="navbar-link" ng-show="userEmail">Hello {{userEmail}}!</a>
           <a ui-sref="collection" class="navbar-link" ng-show="userEmail">Collection</a>
+          <a ui-sref="profile" class="navbar-link" ng-show="userEmail">Profile</a>
           <a class="navbar-link" ng-show="userEmail" ng-click="logout();">Logout</a>
       </div>
     </nav> <!-- navigation bar -->
@@ -60,6 +63,7 @@
     <script src="/scripts/controllers/PlayerBarCtrl.js"></script>
     <script src="/scripts/controllers/SignupCtrl.js"></script>
     <script src="/scripts/controllers/LoginCtrl.js"></script>
+    <script src="/scripts/controllers/ProfileCtrl.js"></script>
     <script src="/scripts/directives/seekBar.js"></script>
     <script src="/scripts/filters/timecode.js"></script>
 </body>

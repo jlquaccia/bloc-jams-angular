@@ -31,6 +31,11 @@
                 url: '/login',
                 controller: 'LoginCtrl as login',
                 templateUrl: '/templates/login.html'
+            })
+            .state('profile', {
+                url: '/profile',
+                controller: 'ProfileCtrl as profile',
+                templateUrl: '/templates/profile.html'
             });
     }
     
