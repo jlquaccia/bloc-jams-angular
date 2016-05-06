@@ -25,6 +25,10 @@
 
 .collection-album-container .caption p a.album-name {
     color: white;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .collection-album-container img {
