@@ -1,6 +1,6 @@
 (function() {
     function CollectionCtrl($scope, $rootScope, $location, $firebaseAuth, Fixtures) {
-        this.albums = Fixtures.getCollection(12);
+        this.albums = Fixtures.getCollection();
         
         var firebaseObj = new Firebase("https://jq-bloc-jams.firebaseIO.com");
         var loginObj = $firebaseAuth(firebaseObj);
