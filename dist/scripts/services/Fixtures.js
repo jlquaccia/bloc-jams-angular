@@ -16,13 +16,6 @@
                 { title: 'Pink', duration: '6:27', audioUrl: '/assets/music/The Unforgiven' },
                 { title: 'Magenta', duration: '4:59', audioUrl: '/assets/music/witj' }
             ]
-//            songs: [
-//                { title: 'Blue', duration: '4:30', audioUrl: '/assets/music/blue' },
-//                { title: 'Green', duration: '8:36', audioUrl: '/assets/music/green' },
-//                { title: 'Red', duration: '6:37', audioUrl: '/assets/music/magenta' },
-//                { title: 'Pink', duration: '6:27', audioUrl: '/assets/music/pink' },
-//                { title: 'Magenta', duration: '4:59', audioUrl: '/assets/music/red' }
-//            ]
         };
         
         

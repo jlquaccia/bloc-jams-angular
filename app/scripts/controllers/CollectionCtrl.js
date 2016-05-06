@@ -20,6 +20,9 @@
         if (!$rootScope.userEmail) {
             $location.path('/login');
         }
+        
+        $scope.query = '';
+        $scope.queryBy = '$';
     }
     
     angular
