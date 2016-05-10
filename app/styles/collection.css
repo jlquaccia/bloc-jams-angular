@@ -39,24 +39,28 @@
     margin-top: 20px;
 }
 
+/* ================================================ */
 /* Search Bar */
+/* ================================================ */
 
 #wrap {
   display: inline-block;
   position: relative;
   height: 60px;
   padding: 0;
+  float: left;
+  margin-top: 10px;
 }
 
 input[type="text"] {
-  height: 60px;
+  height: 58px;
   display: inline-block;
   font-weight: 100;
   border: none;
   outline: none;
   color: #FFF;
   padding: 3px;
-  padding-left: 60px;
+  padding-left: 90px;
   width: 0;
   position: absolute;
   top: 0;
@@ -77,7 +81,7 @@ input[type="text"]:focus:hover {
 }
 
 input[type="text"]:focus {
-  width: 700px;
+  width: 550px;
   z-index: -1;
   border-bottom: 1px solid #FFF;
   cursor: text;
@@ -100,4 +104,117 @@ button#search_submit {
     outline: none;
     border: none;
     z-index: 4;
+    border: 1px solid #fff;
+    padding: 0 15px;
+}
+
+/* ================================================ */
+/* Select Element */
+/* ================================================ */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  min-width: 460px;
+  max-width: 700px;
+  float: right;
+}
+
+.selectholder {
+  clear: both;
+  max-width: 160px;
+  width: 100%;
+  background: #eee;
+  margin: 0 150px 1em;
+  font-size: 1.3em;
+  height: 2.4em;
+  color: #666;
+  -o-transition: .1s ease-out;
+  -ms-transition: .1s ease-out;
+  -moz-transition: .1s ease-out;
+  -webkit-transition: .1s ease-out;
+  transition: .1s ease-out;
+  cursor: pointer;
+  position: relative;
+  right: -390px;
+}
+
+.selectholder .desc {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: .8em;
+  line-height: 2.4em;
+}
+
+.selectholder .pulldown {
+  float: right;
+  vertical-align: middle;
+  width: 2.4em;
+  height: 100%;
+  background-color: #ddd;
+  background-image: url('http://supereightstudio.com/img/pulldown.png');
+  background-size: cover;
+  -o-transition: .1s ease-out;
+  -ms-transition: .1s ease-out;
+  -moz-transition: .1s ease-out;
+  -webkit-transition: .1s ease-out;
+  transition: .1s ease-out;
+}
+
+.selectholder:hover,
+.activeselectholder {
+  background-color: #ddd;
+}
+
+.selectholder:hover .pulldown,
+.activeselectholder .pulldown {
+  background-color: #333;
+  background-image: url('http://supereightstudio.com/img/pulldown_hover.png');
+}
+
+.selectholder .selectdropdown {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #333;
+  color: #fff;
+  display: none;
+  clear: both;
+  z-index: 10;
+}
+
+.selectholder .selectdropdown span {
+  display: block;
+  border-bottom: solid 1px #555;
+  padding-left: .8em;
+  line-height: 2.4em;
+  width: 100%;
+  -o-transition: background-color .1s ease-out;
+  -ms-transition: background-color .1s ease-out;
+  -moz-transition: background-color .1s ease-out;
+  -webkit-transition: background-color .1s ease-out;
+  transition: background-color .1s ease-out;
+}
+
+.selectholder .selectdropdown span:last-child {
+  border-bottom: none;
+}
+
+.selectholder .selectdropdown span.active {
+  background-color: #78296A;
+  background-image: url('http://supereightstudio.com/img/radio_tick.png');
+  background-repeat: no-repeat;
+  background-size: 1.6em 1.6em;
+  background-position: 98% 50%;
+}
+
+.selectholder .selectdropdown span:hover {
+  background-color: #555;
 }
