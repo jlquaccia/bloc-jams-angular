@@ -112,6 +112,7 @@ button#search_submit {
 /* Select Element */
 /* ================================================ */
 
+/*
 *,
 *:before,
 *:after {
@@ -119,6 +120,7 @@ button#search_submit {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+*/
 
 .main {
   width: 100%;
@@ -131,7 +133,6 @@ button#search_submit {
   clear: both;
   max-width: 160px;
   width: 100%;
-  background: #eee;
   margin: 0 150px 1em;
   font-size: 1.3em;
   height: 2.4em;
@@ -143,9 +144,11 @@ button#search_submit {
   transition: .1s ease-out;
   cursor: pointer;
   position: relative;
-  right: -390px;
+  right: -238px;
+  float: right;
 }
 
+/*
 .selectholder .desc {
   display: inline-block;
   vertical-align: middle;
@@ -217,4 +220,4 @@ button#search_submit {
 
 .selectholder .selectdropdown span:hover {
   background-color: #555;
-}
+}*/

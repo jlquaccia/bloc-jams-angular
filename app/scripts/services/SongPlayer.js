@@ -3,7 +3,7 @@
         var SongPlayer = {};
         
         /**
-         * @desc Grabbing the current album being played by use of the getAlbum method from the Fixtures object
+         * @desc Stores an object containing the current album
          * @type {Object}
          */
         var currentAlbum;
