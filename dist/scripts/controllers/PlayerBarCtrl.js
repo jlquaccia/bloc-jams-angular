@@ -1,6 +1,6 @@
 (function() {
     function PlayerBarCtrl(Fixtures, SongPlayer) {
-        this.albumData = Fixtures.getAlbum();
+        this.albumData = SongPlayer.currentAlbum();
         this.songPlayer = SongPlayer;
     }
     
