@@ -1,9 +1,11 @@
 (function() {
-    function CollectionCtrl($scope, $rootScope, $location, $firebaseAuth, Fixtures) {
+    function CollectionCtrl($scope, $rootScope, $location, $firebaseAuth, Fixtures, SongPlayer) {
         this.albums = Fixtures.getCollection();
         
         var firebaseObj = new Firebase("https://jq-bloc-jams.firebaseIO.com");
         var loginObj = $firebaseAuth(firebaseObj);
+        
+        this.songPlayer = SongPlayer;
         
         $rootScope.logout = function() {
             loginObj.$unauth();
@@ -27,5 +29,5 @@
     
     angular
         .module('blocJams')
-        .controller('CollectionCtrl', ['$scope', '$rootScope', '$location', '$firebaseAuth', 'Fixtures', CollectionCtrl]);
+        .controller('CollectionCtrl', ['$scope', '$rootScope', '$location', '$firebaseAuth', 'Fixtures', 'SongPlayer', CollectionCtrl]);
 })();

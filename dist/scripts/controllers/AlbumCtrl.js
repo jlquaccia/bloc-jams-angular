@@ -1,6 +1,7 @@
 (function() {    
-    function AlbumCtrl($rootScope, $location, Fixtures, SongPlayer) {
-        this.albumData = Fixtures.getAlbum();
+    function AlbumCtrl($rootScope, $location, Fixtures, SongPlayer) {        
+        this.albumData = SongPlayer.currentAlbum();
+        
         this.songPlayer = SongPlayer;
         
         if (!$rootScope.userEmail) {

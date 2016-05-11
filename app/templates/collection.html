@@ -30,9 +30,9 @@
         <img src="{{album.albumArtUrl}}">
         <div class="collection-album-info caption">
             <p>
-                <a ui-sref="album" class="album-name">{{album.title}}</a>
+                <a ui-sref="album" class="album-name" ng-click="collection.songPlayer.setAlbum(album)">{{album.title}}</a>
                 <br/>
-                <a ui-sref="album">{{album.artist}}</a>
+                <a ui-sref="album"  ng-click="collection.songPlayer.setAlbum(album)">{{album.artist}}</a>
                 <br/>
                 {{album.songs.length}} songs
                 <br/>

@@ -6,7 +6,7 @@
          * @desc Grabbing the current album being played by use of the getAlbum method from the Fixtures object
          * @type {Object}
          */
-        var currentAlbum = Fixtures.getAlbum();
+        var currentAlbum;
         
         /**
          * @desc Buzz object audio file
@@ -71,6 +71,25 @@
         var getSongIndex = function(song) {
             return currentAlbum.songs.indexOf(song);
         };
+        
+        
+        /**
+         * @function setAlbum
+         * @desc Sets the current album
+         * @param {Object} album
+         */
+        SongPlayer.setAlbum = function(album){
+            currentAlbum = album;
+        }
+        
+        /**
+         * @function currentAlbum
+         * @desc Returns the current album
+         * @param none
+         */
+        SongPlayer.currentAlbum = function(){
+            return currentAlbum;
+        }
         
         /**
          * @desc Song object that is currently in use
@@ -193,12 +212,11 @@
             }
         };
         
-//        SongPlayer.toggleMute = function() {
-//            if (currentBuzzObject) {
-//                currentBuzzObject.toggleMute();
-//            }
-//        };
-        
+        /**
+         * @function muteSong
+         * @desc If a song is currently playing, the audio will be muted
+         * @param none
+         */
         SongPlayer.muteSong = function() {
             if(currentBuzzObject) {
                 currentBuzzObject.mute();
@@ -206,6 +224,11 @@
             }
         };
         
+        /**
+         * @function unmuteSong
+         * @desc If a song is currently playing and is muted, the audio will be unmuted
+         * @param none
+         */
         SongPlayer.unmuteSong = function() {
             if(currentBuzzObject) {
                 currentBuzzObject.unmute();

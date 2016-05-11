@@ -32,7 +32,7 @@
                 year: '2003',
                 albumArtUrl: '/assets/images/artist_album_covers/deloused_in_the_comatorium.jpeg',
                 songs: [
-                    { title: 'Hello, Operator?', duration: '1:01' },
+                    { title: 'Pink', duration: '6:27', audioUrl: '/assets/music/The Unforgiven' },
                     { title: 'Ring, Ring, Ring', duration: '5:01' },
                     { title: 'Fits in Your Pocket', duration: '3:21' },
                     { title: 'Can You Hear Me Now?', duration: '3:14' },
