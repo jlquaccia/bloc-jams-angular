@@ -112,6 +112,7 @@ button#search_submit {
 /* Select Element */
 /* ================================================ */
 
+/*
 *,
 *:before,
 *:after {
@@ -119,6 +120,7 @@ button#search_submit {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+*/
 
 .main {
   width: 100%;

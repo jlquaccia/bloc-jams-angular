@@ -13,7 +13,7 @@
             <div class="selectholder">
                 <label>search by: </label>
                 <select ng-model="queryBy">
-                    <option value="$" selected>All</option>
+                    <option value="$">All</option>
                     <option value="songs">Song</option>
                     <option value="title">Album</option>
                     <option value="artist">Artist</option>
@@ -27,7 +27,7 @@
    <hr>
    
     <div class="collection-album-container column fourth" ng-repeat="album in collection.albums | filter:query">
-        <img src="{{album.albumArtUrl}}">
+        <img src="{{album.albumArtUrl}}" ng-click="testMessage()">
         <div class="collection-album-info caption">
             <p>
                 <a ui-sref="album" class="album-name" ng-click="collection.songPlayer.setAlbum(album)">{{album.title}}</a>
@@ -112,6 +112,20 @@
           $(this).text(value);
           $(this).fadeIn(100);
         });
+      });
+        
+      // getting the correct select option to be selected in order for Angular query filter to work
+      $('.selectholder .selectdropdown span').click(function() {
+          // grab the text of the span that was clicked from the dropdown e.g. 'All', 'Song', 'Album', 'Artist'
+          var newSelectedOption = $(this).text();
+          
+          // the option that is currently selected
+//          var oldSelectedOption = $('option[selected]');
+          
+          // remove 'selected' attribute from the option element that currently has it
+          $(this).parent().siblings('select').children().removeAttr('selected');
+          
+          $('option:contains("' + newSelectedOption + '")').attr('selected', 'selected');
       });
 
       // preload hover images
