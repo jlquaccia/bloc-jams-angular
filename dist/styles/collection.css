@@ -133,6 +133,7 @@ button#search_submit {
   clear: both;
   max-width: 160px;
   width: 100%;
+  background: #eee;
   margin: 0 150px 1em;
   font-size: 1.3em;
   height: 2.4em;
@@ -144,11 +145,9 @@ button#search_submit {
   transition: .1s ease-out;
   cursor: pointer;
   position: relative;
-  right: -238px;
-  float: right;
+  right: -390px;
 }
 
-/*
 .selectholder .desc {
   display: inline-block;
   vertical-align: middle;
@@ -220,4 +219,4 @@ button#search_submit {
 
 .selectholder .selectdropdown span:hover {
   background-color: #555;
-}*/
+}

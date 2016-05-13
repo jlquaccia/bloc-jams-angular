@@ -11,9 +11,9 @@
       
         <div class="main">
             <div class="selectholder">
-<!--                <label>search by: </label>-->
+                <label>search by: </label>
                 <select ng-model="queryBy">
-                    <option value="$" selected>All</option>
+                    <option value="$">All</option>
                     <option value="songs">Song</option>
                     <option value="title">Album</option>
                     <option value="artist">Artist</option>
@@ -27,7 +27,7 @@
    <hr>
    
     <div class="collection-album-container column fourth" ng-repeat="album in collection.albums | filter:query">
-        <img src="{{album.albumArtUrl}}">
+        <img src="{{album.albumArtUrl}}" ng-click="testMessage()">
         <div class="collection-album-info caption">
             <p>
                 <a ui-sref="album" class="album-name" ng-click="collection.songPlayer.setAlbum(album)">{{album.title}}</a>
@@ -42,3 +42,97 @@
 </section>
 
 <ng-include src="'/templates/player_bar.html'"></ng-include>
+
+<script>
+    // preload image function
+    function preload(arrayOfImages) {
+      $(arrayOfImages).each(function() {
+        $('<img/>')[0].src = this;
+      });
+    }
+
+    $(document).ready(function() {
+      // set up select boxes
+      $('.selectholder').each(function() {
+        $(this).children().hide();
+
+        var description = $(this).children('label').text();
+
+        $(this).append('<span class="desc">' + description + '</span>');
+        $(this).append('<span class="pulldown"></span>');
+
+        // set up dropdown element
+        $(this).append('<div class="selectdropdown"></div>');
+        $(this).children('select').children('option').each(function() {
+          if ($(this).attr('value') != '0') {
+            $drop = $(this).parent().siblings('.selectdropdown');
+
+            var name = $(this).text();
+
+            $drop.append('<span>' + name + '</span');
+          }
+        });
+
+        // on click, show dropdown
+        $(this).click(function(){
+            if($(this).hasClass('activeselectholder')) {
+                // roll up roll up
+                $(this).children('.selectdropdown').slideUp(200);
+                $(this).removeClass('activeselectholder');
+            }
+            else {
+                // if there are any other open dropdowns, close 'em
+                $('.activeselectholder').each(function(){
+                    $(this).children('.selectdropdown').slideUp(200);
+                    // change span back to selected option text
+                    if($(this).children('select').val() != '0') {
+                        $(this).children('.desc').fadeOut(100, function(){
+                            $(this).text($(this).siblings("select").val());
+                            $(this).fadeIn(100);
+                        });
+                    }
+                    $(this).removeClass('activeselectholder');
+                });			
+                // roll down
+                $(this).children('.selectdropdown').slideDown(200);
+                $(this).addClass('activeselectholder');
+            }
+        });
+      });
+
+      // select dropdown click action
+      $('.selectholder .selectdropdown span').click(function() {
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+
+        var value = $(this).text();
+
+        $(this).parent().siblings('select').val(value);
+        $(this).parent().siblings('.desc').fadeOut(100, function() {
+          $(this).text(value);
+          $(this).fadeIn(100);
+        });
+      });
+        
+      // getting the correct select option to be selected in order for Angular query filter to work
+      $('.selectholder .selectdropdown span').click(function() {
+          // grab the text of the span that was clicked from the dropdown e.g. 'All', 'Song', 'Album', 'Artist'
+          var newSelectedOption = $(this).text();
+          
+          // the option that is currently selected
+//          var oldSelectedOption = $('option[selected]');
+          
+          // remove 'selected' attribute from the option element that currently has it
+          $(this).parent().siblings('select').children().removeAttr('selected');
+          
+          $('option:contains("' + newSelectedOption + '")').attr('selected', 'selected');
+      });
+
+      // preload hover images
+      preload([
+        'http://supereightstudio.com/img/radio_tick.png',
+        'http://supereightstudio.com/img/pulldown.png',
+        'http://supereightstudio.com/img/pulldown_hover.png'
+      ]);
+    });
+</script>
