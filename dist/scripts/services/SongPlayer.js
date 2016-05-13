@@ -80,6 +80,7 @@
          */
         SongPlayer.setAlbum = function(album){
             currentAlbum = album;
+            localStorage.setItem("currentAlbum", JSON.stringify(currentAlbum));
         }
         
         /**
