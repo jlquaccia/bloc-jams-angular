@@ -1,0 +1,18 @@
+.rating {
+    font-size: 175%;
+    padding: 0 0.5em;
+}
+
+.rating > a {
+    text-decoration: none;
+}
+
+.rating .rating-highlight,
+.rating.rating-highlight:hover {
+    color: #FFF;
+}
+
+.rating .rating-normal,
+.rating.rating-normal:hover {
+    color: #FFF;
+}
