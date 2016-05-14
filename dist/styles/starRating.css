@@ -3,6 +3,14 @@
     padding: 0 0.5em;
 }
 
+.song-item-rating > .rating {
+    display: flex;
+}
+
+.album-view-rating > .rating {
+    padding-left: 0;
+}
+
 .rating > a {
     text-decoration: none;
 }
