@@ -1,0 +1,61 @@
+<!--
+<div class="selectholder">
+   {{queryBy}}
+    <label>search by: </label>
+    <select ng-model="queryBy">
+        <option value="$">All</option>
+        <option value="songs">Song</option>
+        <option value="title">Album</option>
+        <option value="artist">Artist</option>
+    </select>
+</div>       -->
+
+
+<div class="selectholder">
+    <span class="desc">{{queryByDisplay}}</span>
+    <span class="pulldown"></span>
+    <div class="selectdropdown">
+        <span ng-click="setQuery('$')">All</span>
+        <span ng-click="setQuery('songs')">Song</span>
+        <span ng-click="setQuery('artist')">Artist</span>
+        <span ng-click="setQuery('title')">Album</span>
+        
+    </div>
+</div>
+
+
+
+
+<script>
+    
+    
+    $select = $('.selectholder') 
+    
+        $select.click(function(){
+            if($select.hasClass('activeselectholder')) {
+                // roll up roll up
+                $select.children('.selectdropdown').slideUp(200);
+                $select.removeClass('activeselectholder');
+            }
+            else {
+                // if there are any other open dropdowns, close 'em
+                $('.activeselectholder').each(function(){
+                    $select.children('.selectdropdown').slideUp(200);
+                    // change span back to selected option text
+                    if($select.children('select').val() != '0') {
+                        $select.children('.desc').fadeOut(100, function(){
+                            $select.text($select.siblings("select").val());
+                            $select.fadeIn(100);
+                        });
+                    }
+                    $select.removeClass('activeselectholder');
+                });			
+                // roll down
+                $select.children('.selectdropdown').slideDown(200);
+                $select.addClass('activeselectholder');
+            }
+    });
+//
+
+
+</script>

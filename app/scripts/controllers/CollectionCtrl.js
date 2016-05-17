@@ -25,6 +25,33 @@
         
         $scope.query = '';
         $scope.queryBy = '$';
+        
+        
+        $scope.gauchoQuery = function(){
+            if($scope.queryBy == "songs"){
+                return function(album){
+                    var re = new RegExp($scope.query, 'i');
+                    for(i = 0; i < album.songs.length -1; i++){
+                        return false || re.test(album.songs[i].title);
+                    }
+                }
+            } else if ($scope.queryBy == "artist") {
+                return function(album){
+                    var re = new RegExp($scope.query, 'i');
+                    return !$scope.query || re.test(album.artist);
+                }
+            } else if ($scope.queryBy == "title") {
+                return function(album) {
+                    var re = new RegExp($scope.query, 'i');
+                    return !$scope.query || re.test(album.title);
+                }
+            } else {
+                return function(album) {
+                    var re = new RegExp($scope.query, 'i');
+                    return !$scope.query || re.test(album.artist) || re.test(album.title);
+                }
+            }
+        }
     }
     
     angular
