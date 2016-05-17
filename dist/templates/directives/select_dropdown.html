@@ -1,16 +1,3 @@
-<!--
-<div class="selectholder">
-   {{queryBy}}
-    <label>search by: </label>
-    <select ng-model="queryBy">
-        <option value="$">All</option>
-        <option value="songs">Song</option>
-        <option value="title">Album</option>
-        <option value="artist">Artist</option>
-    </select>
-</div>       -->
-
-
 <div class="selectholder">
     <span class="desc">{{queryByDisplay}}</span>
     <span class="pulldown"></span>
@@ -23,12 +10,7 @@
     </div>
 </div>
 
-
-
-
 <script>
-    
-    
     $select = $('.selectholder') 
     
         $select.click(function(){
@@ -55,7 +37,4 @@
                 $select.addClass('activeselectholder');
             }
     });
-//
-
-
 </script>
