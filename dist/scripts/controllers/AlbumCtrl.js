@@ -1,5 +1,5 @@
 (function() {    
-    function AlbumCtrl($rootScope, $location, Fixtures, SongPlayer) {        
+    function AlbumCtrl($rootScope, $scope, $location, Fixtures, SongPlayer) {        
         this.albumData = SongPlayer.currentAlbum();
         this.songPlayer = SongPlayer;
         
@@ -15,9 +15,13 @@
         if (!this.albumData) {
             this.albumData = JSON.parse(localStorage.getItem("currentAlbum"));
         }
+        
+        $scope.addSongToPlaylist = function() {
+            console.log(typeof albumData);
+        };
     }
     
     angular
         .module('blocJams')
-        .controller('AlbumCtrl', ['$rootScope', '$location', 'Fixtures', 'SongPlayer', AlbumCtrl]);
+        .controller('AlbumCtrl', ['$rootScope', '$scope', '$location', 'Fixtures', 'SongPlayer', AlbumCtrl]);
 })();
