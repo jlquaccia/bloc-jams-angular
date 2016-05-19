@@ -26,9 +26,7 @@
         $scope.query = '';
         $scope.queryBy = '$';
         
-        
-        
-        function matchTitles(album){
+        function matchSongTitles(album){
             for(i = 0; i < album.songs.length -1; i++){
                 if (album.songs[i].title.toLowerCase().indexOf($scope.query.toLowerCase()) > -1) {
                     return true;
@@ -37,12 +35,11 @@
 
             return false;
         }
-
         
         $scope.gauchoQuery = function(){
             if($scope.queryBy == "songs"){
                 return function(album){
-                    return matchTitles(album);
+                    return matchSongTitles(album);
                 }
             } else if ($scope.queryBy == "artist") {
                 return function(album){
@@ -57,7 +54,7 @@
             } else {
                 return function(album) {
                     var re = new RegExp($scope.query, 'i');
-                    return !$scope.query || re.test(album.artist) || re.test(album.title) || matchTitles(album);
+                    return !$scope.query || re.test(album.artist) || re.test(album.title) || matchSongTitles(album);
                 }
             }
         }
