@@ -122,14 +122,20 @@ button {
 }
 
 ul#plList {
+/*
     max-height: 500px;
     overflow: auto;
+*/
     list-style: none;
     padding: 0;
 }
 
 #plwrap {
     margin: 0 auto;
+    max-height: 500px;
+    overflow: auto;
+    list-style: none;
+    padding: 0;
 }
 
 #plList {

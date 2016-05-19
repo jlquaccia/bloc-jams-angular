@@ -45,84 +45,20 @@
             
             <div id="mainwrap">
                 <div id="plwrap">
-                    <ul id="plList">
+                    <ul id="plList" ng-repeat="song in playerBar.albumData.songs">
                         <li>
                             <div class="plItem">
-                                <div class="plNum">01.</div>
-                                <div class="plTitle">Robot Rock - Daft Punk</div>
-                                <div class="plLength">4:48</div>
-                                <div class="plRemoveTrack"><i class="ion-ios-minus-outline"></i></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">02.</div>
-                                <div class="plTitle">Left Hand Suzuki Method - Gorillaz</div>
-                                <div class="plLength">3:13</div>
-                                <div class="plRemoveTrack"><i class="ion-ios-minus-outline"></i></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">03.</div>
-                                <div class="plTitle">Engineer Says - Dr.Dog</div>
-                                <div class="plLength">4:09</div>
-                                <div class="plRemoveTrack"><i class="ion-ios-minus-outline"></i></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">04.</div>
-                                <div class="plTitle">Black Widow - Superhumanoids</div>
-                                <div class="plLength">2:59</div>
-                                <div class="plRemoveTrack"><i class="ion-ios-minus-outline"></i></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">05.</div>
-                                <div class="plTitle">Skullrush - Antwon</div>
-                                <div class="plLength">2:21</div>
-                                <div class="plRemoveTrack"><i class="ion-ios-minus-outline"></i></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">06.</div>
-                                <div class="plTitle">Bye Bye Love - Simon &amp; Garfunkel</div>
-                                <div class="plLength">2:53</div>
-                                <div class="plRemoveTrack"><i class="ion-ios-minus-outline"></i></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">07.</div>
-                                <div class="plTitle">Hit Parade - Neon Indian</div>
-                                <div class="plLength">1:05</div>
-                                <div class="plRemoveTrack"><i class="ion-ios-minus-outline"></i></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">08.</div>
-                                <div class="plTitle">Nishio 2 - Lemaitre</div>
-                                <div class="plLength">4:01</div>
-                                <div class="plRemoveTrack"><i class="ion-ios-minus-outline"></i></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="plItem">
-                                <div class="plNum">09.</div>
-                                <div class="plTitle">I'm in Love - Kygo</div>
-                                <div class="plLength">3:32</div>
+                                <div class="plNum">{{$index + 1}}</div>
+                                <div class="plTitle">{{song.title}}</div>
+                                <div class="plLength">{{song.duration}}</div>
                                 <div class="plRemoveTrack"><i class="ion-ios-minus-outline"></i></div>
                             </div>
                         </li>
                     </ul>
-                    
-                    <div class="close_btn_wrap">
-                        <button class="md-close">Close</button>
-                    </div>
+                </div>
+                
+                <div class="close_btn_wrap">
+                    <button class="md-close">Close</button>
                 </div>
             </div>
         </div>

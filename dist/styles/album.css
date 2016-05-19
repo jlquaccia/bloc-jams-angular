@@ -94,4 +94,5 @@
 /* add to playlist button */
 .song-item-add-to-playlist {
     font-size: 15px;
+    cursor: pointer;
 }
