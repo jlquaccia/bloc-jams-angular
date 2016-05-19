@@ -31,12 +31,15 @@
             if($scope.queryBy == "songs"){
                 return function(album){
                     for(i = 0; i < album.songs.length -1; i++){
-                        if (album.songs[i].title == $scope.query) {
-                            return true;
-                        }
+//                        if (album.songs[i].title == $scope.query) {
+//                            return true;
+//                        }
+                        
+                        var re = new RegExp($scope.query, 'i');
+                        return !$scope.query || re.test(album.songs[i].title);
                     }
                     
-                    return false;
+//                    return false;
                 }
             } else if ($scope.queryBy == "artist") {
                 return function(album){
