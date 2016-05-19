@@ -16,8 +16,11 @@
             this.albumData = JSON.parse(localStorage.getItem("currentAlbum"));
         }
         
-        $scope.addSongToPlaylist = function() {
-            console.log(typeof albumData);
+        $rootScope.currentPlaylist = [];
+        
+        $scope.addSongToPlaylist = function(song) {
+            $rootScope.currentPlaylist.push(song);
+            console.log($rootScope.currentPlaylist);
         };
     }
     
