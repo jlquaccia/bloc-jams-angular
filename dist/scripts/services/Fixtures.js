@@ -185,15 +185,15 @@
             },
             
             {
-                title: 'good kid, m.A.A.d city',
-                artist: 'Kendrick Lamar',
-                label: 'Aftermath/Interscope Records',
-                year: '2013',
-                albumArtUrl: '/assets/images/artist_album_covers/good kid, m.A.A.d city.jpeg',
+                title: 'The Chronic',
+                artist: 'Dr. Dre',
+                label: 'Death Row Studios',
+                year: '1992',
+                albumArtUrl: '/assets/images/artist_album_covers/the_chronic.jpg',
                 artistScore: 0,
                 albumScore: 0,
                 songs: [
-                    { title: 'Hello, Operator?', duration: '1:01', songScore: 0 },
+                    { title: 'The Chronic (Intro)', duration: '1:58', audioUrl: '/assets/music/albums/the_chronic/01 The Chronic (Intro)', songScore: 0 },
                     { title: 'Ring, Ring, Ring', duration: '5:01', songScore: 0 },
                     { title: 'Fits in Your Pocket', duration: '3:21', songScore: 0 },
                     { title: 'Can You Hear Me Now?', duration: '3:14', songScore: 0 },
@@ -208,7 +208,6 @@
                     { title: 'Fits in Your Pocket', duration: '3:21', songScore: 0 },
                     { title: 'Can You Hear Me Now?', duration: '3:14', songScore: 0 },
                     { title: 'Wrong Phone Number', duration: '2:15', songScore: 0 },
-                    { title: 'Can You Hear Me Now?', duration: '3:14', songScore: 0 },
                     { title: 'Wrong Phone Number', duration: '2:15', songScore: 0 }
                 ]
             },
@@ -267,19 +266,14 @@
             },
             
             {
-                title: 'The Seshen',
-                artist: 'The Seshen',
-                label: 'The Seshen',
-                year: '2012',
-                albumArtUrl: '/assets/images/artist_album_covers/the_seshen.jpeg',
+                title: 'Genesis Series',
+                artist: 'ZHU',
+                label: 'Columbia Records, a Division of Sony Music Entertainment',
+                year: '2015',
+                albumArtUrl: '/assets/images/artist_album_covers/genesis_series.jpeg',
                 artistScore: 0,
                 albumScore: 0,
                 songs: [
-                    { title: 'Hello, Operator?', duration: '1:01', songScore: 0 },
-                    { title: 'Ring, Ring, Ring', duration: '5:01', songScore: 0 },
-                    { title: 'Fits in Your Pocket', duration: '3:21', songScore: 0 },
-                    { title: 'Can You Hear Me Now?', duration: '3:14', songScore: 0 },
-                    { title: 'Wrong Phone Number', duration: '2:15', songScore: 0 },
                     { title: 'Hello, Operator?', duration: '1:01', songScore: 0 },
                     { title: 'Ring, Ring, Ring', duration: '5:01', songScore: 0 },
                     { title: 'Fits in Your Pocket', duration: '3:21', songScore: 0 },
