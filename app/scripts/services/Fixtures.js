@@ -202,7 +202,13 @@
                     { title: 'Lil\' Ghetto Boy', duration: '5:29', audioUrl: '/assets/music/albums/the_chronic/07 Lil\' Ghetto Boy', songScore: 0 },
                     { title: 'A Nigga witta Gun', duration: '3:52', audioUrl: '/assets/music/albums/the_chronic/08 A Nigga witta Gun', songScore: 0 },
                     { title: 'Rat-Tat-Tat-Tat', duration: '3:49', audioUrl: '/assets/music/albums/the_chronic/09 Rat-Tat-Tat-Tat', songScore: 0 },
-                    { title: 'The $20 Sack Pyramid', duration: '2:53', audioUrl: '/assets/music/albums/the_chronic/10 The $20 Sack Pyramid', songScore: 0 }
+                    { title: 'The $20 Sack Pyramid', duration: '2:53', audioUrl: '/assets/music/albums/the_chronic/10 The $20 Sack Pyramid', songScore: 0 },
+                    { title: 'Lyrical Gangbang', duration: '4:04', audioUrl: '/assets/music/albums/the_chronic/11 Lyrical Gangbang', songScore: 0 },
+                    { title: 'High Powered', duration: '2:44', audioUrl: '/assets/music/albums/the_chronic/12 High Powered', songScore: 0 },
+                    { title: 'The Doctor\'s Office', duration: '1:04', audioUrl: '/assets/music/albums/the_chronic/13 The Doctor\'s Office', songScore: 0 },
+                    { title: 'Stranded on Death Row', duration: '4:47', audioUrl: '/assets/music/albums/the_chronic/14 Stranded on Death Row', songScore: 0 },
+                    { title: 'The Roach (The Chronic Outro)', duration: '4:37', audioUrl: '/assets/music/albums/the_chronic/15 The Roach (The Chronic Outro)', songScore: 0 },
+                    { title: 'Bitches Ain\'t Shit', duration: '4:49', audioUrl: '/assets/music/albums/the_chronic/16 Bitches Ain\'t Shit', songScore: 0 }
                 ]
             },
             
