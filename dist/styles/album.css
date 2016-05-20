@@ -96,3 +96,9 @@
     font-size: 15px;
     cursor: pointer;
 }
+
+/* album art */
+
+img.album-art-cover {
+    margin-top: 20px;
+}
