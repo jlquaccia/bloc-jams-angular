@@ -49,7 +49,7 @@
                         <li>
                             <div class="plItem">
                                 <div class="plNum">{{$index + 1}}</div>
-                                <div class="plTitle">{{song.title}}</div>
+                                <div class="plTitle">{{song.title}} - {{playerBar.albumData.artist}}</div>
                                 <div class="plLength">{{song.duration}}</div>
                                 <div class="plRemoveTrack"><i class="ion-ios-minus-outline" ng-click="removeSongFromPlaylist($index)"></i></div>
                             </div>
