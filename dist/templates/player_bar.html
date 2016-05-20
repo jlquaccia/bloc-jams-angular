@@ -51,7 +51,7 @@
                                 <div class="plNum">{{$index + 1}}</div>
                                 <div class="plTitle">{{song.title}}</div>
                                 <div class="plLength">{{song.duration}}</div>
-                                <div class="plRemoveTrack"><i class="ion-ios-minus-outline"></i></div>
+                                <div class="plRemoveTrack"><i class="ion-ios-minus-outline" ng-click="removeSongFromPlaylist($index)"></i></div>
                             </div>
                         </li>
                     </ul>
