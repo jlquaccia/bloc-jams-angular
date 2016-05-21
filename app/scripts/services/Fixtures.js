@@ -12,18 +12,18 @@
                 artistScore: 0,
                 albumScore: 0,
                 songs: [
-                    { title: 'Blue', duration: '4:30', audioUrl: '/assets/music/Fuel', songScore: 0 },
-                    { title: 'Green', duration: '8:36', audioUrl: '/assets/music/Master Of Puppets', songScore: 0 },
-                    { title: 'Red', duration: '6:37', audioUrl: '/assets/music/Ride The Lightning', songScore: 0 },
-                    { title: 'Pink', duration: '6:27', audioUrl: '/assets/music/The Unforgiven', songScore: 0 },
-                    { title: 'Magenta', duration: '4:59', audioUrl: '/assets/music/witj', songScore: 0 },
-                    { title: 'Blue', duration: '4:30', audioUrl: '/assets/music/Fuel', songScore: 0 },
-                    { title: 'Green', duration: '8:36', audioUrl: '/assets/music/Master Of Puppets', songScore: 0 },
-                    { title: 'Red', duration: '6:37', audioUrl: '/assets/music/Ride The Lightning', songScore: 0 },
-                    { title: 'Pink', duration: '6:27', audioUrl: '/assets/music/The Unforgiven', songScore: 0 },
-                    { title: 'Magenta', duration: '4:59', audioUrl: '/assets/music/witj', songScore: 0 },
-                    { title: 'Pink', duration: '6:27', audioUrl: '/assets/music/The Unforgiven', songScore: 0 },
-                    { title: 'Magenta', duration: '4:59', audioUrl: '/assets/music/witj', songScore: 0 }
+                    { title: 'Plastic Soldiers', duration: '5:04', audioUrl: '/assets/music/Fuel', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Creep in a T-Shirt', duration: '3:53', audioUrl: '/assets/music/Master Of Puppets', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Evil Friends', duration: '3:35', audioUrl: '/assets/music/Ride The Lightning', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Modern Jesus', duration: '3:14', audioUrl: '/assets/music/The Unforgiven', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Hip Hop Kids', duration: '3:28', audioUrl: '/assets/music/witj', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Atomic Man', duration: '3:47', audioUrl: '/assets/music/Fuel', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Sea of Air', duration: '4:22', audioUrl: '/assets/music/Master Of Puppets', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Waves', duration: '4:51', audioUrl: '/assets/music/Ride The Lightning', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Holy Roller (Hallelujah)', duration: '3:21', audioUrl: '/assets/music/The Unforgiven', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Someday Believers', duration: '3:53', audioUrl: '/assets/music/witj', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Purple Yellow Red and Blue', duration: '4:10', audioUrl: '/assets/music/The Unforgiven', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Smile', duration: '4:51', audioUrl: '/assets/music/witj', songScore: 0, artist: 'Portugal. The Man' }
                 ]
             },
             

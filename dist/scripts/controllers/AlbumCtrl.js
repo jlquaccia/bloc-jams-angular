@@ -26,6 +26,13 @@
             LocalStorage.put($rootScope.currentPlaylist);
         };
         
+        $scope.addSongFlashMessage = function() {
+            $('.add-song-flash').removeClass('fadeOutDown')
+                .addClass('fadeOutDown')
+                .fadeIn()
+                .fadeOut();
+        };
+        
         $rootScope.removeSongFromPlaylist = function(index) {
             // remove from currentPlaylist
             $rootScope.currentPlaylist.splice(index, 1);

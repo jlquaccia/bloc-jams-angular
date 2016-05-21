@@ -146,10 +146,17 @@ ul#plList {
     cursor: pointer;
     margin: 0;
     padding: 21px 0;
+    border-bottom: 1px solid #FFF;
 }
 
+/*
 #plList li:nth-child(even) {
     background-color: #A44982;
+}
+*/
+
+#plwrap ul:last-child {
+    border-bottom: none;
 }
 
 #plList li:nth-child(odd) {

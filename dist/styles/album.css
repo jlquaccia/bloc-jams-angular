@@ -35,7 +35,7 @@
 
 .album-view-song-item {
     height: 3rem;
-    border-bottom: 1px solid rgba(255,255,255,0.5)
+    border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
 .song-item-number {
@@ -101,4 +101,12 @@
 
 img.album-art-cover {
     margin-top: 20px;
+}
+
+/* add song flash message */
+.add-song-flash {
+    display: none;
+    position: absolute;
+    margin: 21px;
+    animation-delay: .5s;
 }
