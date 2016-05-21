@@ -69,7 +69,8 @@
          * @param {Object} song
          */
         var getSongIndex = function(song) {
-            return currentAlbum.songs.indexOf(song);
+//            return currentAlbum.songs.indexOf(song) || $rootScope.currentPlaylist.indexOf(song);
+            return $rootScope.currentPlaylist.indexOf(song);
         };
         
         
@@ -156,16 +157,31 @@
          * @desc Decrements the index of the current song by 1 in order to reach the previous song (if on first song will jump to last song)
          * @param none
          */
+//        SongPlayer.previous = function() {
+//            var currentSongIndex = getSongIndex(SongPlayer.currentSong);
+//            currentSongIndex--;
+//            
+//            if (currentSongIndex < 0) {
+//                var song = currentAlbum.songs[currentAlbum.songs.length - 1];
+//                setSong(song);
+//                playSong(song);
+//            } else {
+//                var song = currentAlbum.songs[currentSongIndex];
+//                setSong(song);
+//                playSong(song);
+//            }
+//        };
+        
         SongPlayer.previous = function() {
             var currentSongIndex = getSongIndex(SongPlayer.currentSong);
             currentSongIndex--;
             
             if (currentSongIndex < 0) {
-                var song = currentAlbum.songs[currentAlbum.songs.length - 1];
+                var song = $rootScope.currentPlaylist[$rootScope.currentPlaylist.length - 1];
                 setSong(song);
                 playSong(song);
             } else {
-                var song = currentAlbum.songs[currentSongIndex];
+                var song = $rootScope.currentPlaylist[currentSongIndex];
                 setSong(song);
                 playSong(song);
             }
@@ -176,16 +192,45 @@
          * @desc Increments the index of the current song by 1 in order to reach the next song (if on last song will jump to first song)
          * @param none
          */
+//        SongPlayer.next = function() {
+//            var currentSongIndex = getSongIndex(SongPlayer.currentSong);
+//            currentSongIndex++;
+//            
+//            if (currentSongIndex > currentAlbum.songs.length - 1) {
+//                var song = currentAlbum.songs[0];
+//                setSong(song);
+//                playSong(song);
+//            } else {
+//                var song = currentAlbum.songs[currentSongIndex];
+//                setSong(song);
+//                playSong(song);
+//            }
+//        };
+        
         SongPlayer.next = function() {
             var currentSongIndex = getSongIndex(SongPlayer.currentSong);
             currentSongIndex++;
             
-            if (currentSongIndex > currentAlbum.songs.length - 1) {
-                var song = currentAlbum.songs[0];
+//            if ($rootScope.currentPlaylist === []) {
+//                var currentSongIndex = getSongIndex(SongPlayer.currentSong);
+//                
+//                if (currentSongIndex > currentAlbum.songs.length - 1) {
+//                    var song = currentAlbum.songs[0];
+//                    setSong(song);
+//                    playSong(song);
+//                } else {
+//                    var song = currentAlbum.songs[currentSongIndex];
+//                    setSong(song);
+//                    playSong(song);
+//                }
+//            }
+            
+            if (currentSongIndex > $rootScope.currentPlaylist.length - 1) {
+                var song = $rootScope.currentPlaylist[0];
                 setSong(song);
                 playSong(song);
             } else {
-                var song = currentAlbum.songs[currentSongIndex];
+                var song = $rootScope.currentPlaylist[currentSongIndex];
                 setSong(song);
                 playSong(song);
             }
