@@ -41,7 +41,7 @@
     <!--  Playlist Modal  -->
     <div class="md-modal md-effect-11" id="modal-11">
         <div class="md-content">
-            <h3>Play Queue</h3>
+            <h3>Custom Playlist</h3>
             
             <div id="mainwrap">
                 <div id="plwrap">
@@ -55,6 +55,12 @@
                             </div>
                         </li>
                     </ul>
+                </div>
+                
+                <div ng-if="!currentPlaylist.length">
+                    <div class="empty-playlist-wrapper">
+                        <div class="empty-playlist">Playlist is Currently Empty</div>
+                    </div>
                 </div>
                 
                 <div class="close_btn_wrap">

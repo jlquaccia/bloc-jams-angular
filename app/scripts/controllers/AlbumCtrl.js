@@ -18,8 +18,6 @@
         
         $rootScope.currentPlaylist = LocalStorage.get();
         
-//        console.log($rootScope.currentPlaylist);
-        
         // add a song to the current playlist from album.html
         $scope.addSongToPlaylist = function(song) {
             $rootScope.currentPlaylist.push(song);

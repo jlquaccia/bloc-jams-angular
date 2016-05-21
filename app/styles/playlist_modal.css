@@ -203,3 +203,15 @@ ul#plList {
 .close_btn_wrap {
     margin-top: 15px;
 }
+
+.empty-playlist {
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.empty-playlist-wrapper {
+    background-color: #A34E8A;
+    height: 65px;
+    border-bottom: 1px solid #FFF;
+}
