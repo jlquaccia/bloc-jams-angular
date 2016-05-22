@@ -46,12 +46,22 @@
             <div id="mainwrap">
                 <div id="plwrap">
                     <ul id="plList" ng-repeat="song in currentPlaylist track by $index">
-                        <li ng-click="playerBar.songPlayer.play(song)">
+                        <li ng-show="!song.playing" ng-click="playerBar.songPlayer.play(song)">
                             <div class="plItem">
                                 <div class="plNum">{{$index + 1}}</div>
                                 <div class="plTitle">{{song.title}} - {{song.artist}}</div>
                                 <div class="plLength">{{song.duration}}</div>
                                 <div class="plRemoveTrack"><i class="ion-ios-minus-outline" ng-click="removeSongFromPlaylist($index)"></i></div>
+                            </div>
+                        </li>
+                        
+                        <li ng-show="song.playing" class="now_playing" ng-click="playerBar.songPlayer.play(song)">
+                            <div class="plItem">
+                                <div class="plNum now_playing_num">{{$index + 1}}</div>
+                                <div class="plTitle now_playing_title">{{song.title}} - {{song.artist}}</div>
+                                <div class="plLength">{{song.duration}}</div>
+                                <div class="plRemoveTrack"><i class="ion-ios-minus-outline" ng-click="removeSongFromPlaylist($index)"></i></div>
+                                <span class="ion-volume-high now_playing"></span>
                             </div>
                         </li>
                     </ul>

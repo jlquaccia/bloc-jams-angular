@@ -223,3 +223,21 @@ button.clear_all_btn {
     width: 185px;
     text-align: center;
 }
+
+span.ion-volume-high.now_playing {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.now_playing_num {
+    padding-left: 51px;
+}
+
+.now_playing_title {
+    left: 80px;
+}
+
+.now_playing {
+    background-color: #262223;
+}
