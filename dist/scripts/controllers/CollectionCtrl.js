@@ -1,5 +1,5 @@
 (function() {
-    function CollectionCtrl($scope, $rootScope, $location, $firebaseAuth, Fixtures, SongPlayer) {
+    function CollectionCtrl($scope, $rootScope, $location, $firebaseAuth, Fixtures, SongPlayer, LocalStorage) {
         this.albums = Fixtures.getCollection();
         
         var firebaseObj = new Firebase("https://jq-bloc-jams.firebaseIO.com");
@@ -22,6 +22,8 @@
         if (!$rootScope.userEmail) {
             $location.path('/login');
         }
+        
+        $rootScope.currentPlaylist = LocalStorage.get();
         
         $scope.query = '';
         $scope.queryBy = '$';
@@ -57,10 +59,10 @@
                     return !$scope.query || re.test(album.artist) || re.test(album.title) || matchSongTitles(album);
                 }
             }
-        }
+        };
     }
     
     angular
         .module('blocJams')
-        .controller('CollectionCtrl', ['$scope', '$rootScope', '$location', '$firebaseAuth', 'Fixtures', 'SongPlayer', CollectionCtrl]);
+        .controller('CollectionCtrl', ['$scope', '$rootScope', '$location', '$firebaseAuth', 'Fixtures', 'SongPlayer', 'LocalStorage', CollectionCtrl]);
 })();
