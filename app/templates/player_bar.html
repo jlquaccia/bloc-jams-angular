@@ -63,7 +63,11 @@
                     </div>
                 </div>
                 
-                <div class="close_btn_wrap">
+                <div class="btn_wrapper">
+                    <div ng-if="currentPlaylist.length">
+                        <button class="clear_all_btn" ng-click="clearAllFromPlaylist()">Clear All</button>
+                    </div>
+
                     <button class="md-close">Close</button>
                 </div>
             </div>
