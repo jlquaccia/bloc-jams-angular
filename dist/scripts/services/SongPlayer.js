@@ -130,6 +130,10 @@
          * @param {Object} song
          */
         SongPlayer.play = function(song) {
+            if (currentAlbum === undefined) {
+                currentAlbum = JSON.parse(localStorage.getItem("currentAlbum"));
+            }
+            
             song = song || SongPlayer.currentSong || currentAlbum.songs[0];
             if (SongPlayer.currentSong !== song) {
                 setSong(song);

@@ -2,6 +2,10 @@
     function PlayerBarCtrl(Fixtures, SongPlayer) {
         this.albumData = SongPlayer.currentAlbum();
         this.songPlayer = SongPlayer;
+        
+        if (!this.albumData) {
+            this.albumData = JSON.parse(localStorage.getItem("currentAlbum"));
+        }
     }
     
     angular
