@@ -31,6 +31,21 @@
     <link rel="stylesheet" type="text/css" href="/styles/navbar.css">
 </head>
 <body>
+    <!-- Hidden Menu -->
+    <div id="hidden_menu">
+        <ul>
+            <!-- Show if no user is logged in -->
+            <li ng-hide="userEmail"><a ui-sref="login">Login</a></li>
+            <li ng-hide="userEmail"><a ui-sref="signup">Sign Up</a></li>
+            
+            <!-- Show if user is logged in -->
+            <li ng-show="userEmail" class="hello">Hello {{userEmail}}!</li>
+            <li ng-show="userEmail"><a ui-sref="collection">Collection</a></li>
+            <li ng-show="userEmail"><a ui-sref="profile">Profile</a></li>
+            <li ng-show="userEmail"><a ng-click="logout();">Logout</a></li>
+        </ul>
+    </div>
+   
     <nav class="navbar">
       <a ui-sref="landing" class="logo">
           <img src="assets/images/bloc_jams_logo.png" alt="bloc jams logo" class="logo">
@@ -47,18 +62,19 @@
           <a class="navbar-link" ng-show="userEmail" ng-click="logout();">Logout</a>
       </div>
       
-    <!-- Mobile Hamburger -->
+      <!-- Small Screen Hamburger -->
       <div id="hamburger">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
       </div>
-      
       <div style="clear:both;"></div>
     </nav> <!-- navigation bar -->
     
-    <ui-view></ui-view>
+    <div class="view">
+        <ui-view></ui-view>
+    </div>
     
     <!--  jQuery  -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -94,6 +110,12 @@
         $(document).ready(function() {
             $('#hamburger').click(function() {
                 $(this).toggleClass('open');
+                $('#hidden_menu').slideToggle();
+            });
+            
+            $('#hidden_menu a').click(function() {
+                $('#hidden_menu').slideToggle();
+                $('#hamburger').toggleClass('open');
             });
         });
     </script>

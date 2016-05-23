@@ -4,6 +4,10 @@
     display: none;
 }
 
+#hidden_menu {
+    display: none;
+}
+
 @media (max-width: 800px) {
     
     /*  Hamburger Icon  */
@@ -93,5 +97,42 @@
     
     .navbar .links-container {
         display: none;
+    }
+    
+    /*  Hidden Menu  */
+    
+    #hidden_menu {
+        display: none;
+        padding: 20px;
+        text-align: center;
+        background-color: #FFF;
+        position: relative;
+        transition: top 300ms;
+    }
+    
+    #hidden_menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #hidden_menu ul li {
+        margin: 10px 0;
+        border-bottom: 2px dashed #000;
+    }
+    
+    #hidden_menu ul li a {
+        color: #000;
+        font-size: 30px;
+        font-weight: 100;
+        letter-spacing: 0px;
+    }
+    
+    li.hello {
+        text-decoration: underline;
+        font-size: 30px;
+        padding-bottom: 30px;
+        color: #000;
+        font-weight: 100;
     }
 }
