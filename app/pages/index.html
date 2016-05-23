@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="/styles/profile.css">
     <link rel="stylesheet" type="text/css" href="/styles/starRating.css">
     <link rel="stylesheet" type="text/css" href="/styles/playlist_modal.css">
+    <link rel="stylesheet" type="text/css" href="/styles/navbar.css">
 </head>
 <body>
     <nav class="navbar">
@@ -45,6 +46,16 @@
           <a ui-sref="profile" class="navbar-link" ng-show="userEmail">Profile</a>
           <a class="navbar-link" ng-show="userEmail" ng-click="logout();">Logout</a>
       </div>
+      
+    <!-- Mobile Hamburger -->
+      <div id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      
+      <div style="clear:both;"></div>
     </nav> <!-- navigation bar -->
     
     <ui-view></ui-view>
@@ -75,5 +86,16 @@
     <script src="/scripts/directives/starRating.js"></script>
     <script src="/scripts/directives/selectDropdown.js"></script>
     <script src="/scripts/filters/timecode.js"></script>
+    
+    <script>
+        
+        // Responsive Hamburger Icon
+        
+        $(document).ready(function() {
+            $('#hamburger').click(function() {
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
 </body>
 </html>
