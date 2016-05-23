@@ -134,13 +134,15 @@
                 currentAlbum = JSON.parse(localStorage.getItem("currentAlbum"));
             }
             
-            song = song || SongPlayer.currentSong || currentAlbum.songs[0];
-            if (SongPlayer.currentSong !== song) {
-                setSong(song);
-                playSong(song);
-            } else if (SongPlayer.currentSong === song) {
-                if (currentBuzzObject.isPaused()) {
+            if (song != undefined || currentAlbum != undefined) {
+                song = song || SongPlayer.currentSong || currentAlbum.songs[0];
+                if (SongPlayer.currentSong !== song) {
+                    setSong(song);
                     playSong(song);
+                } else if (SongPlayer.currentSong === song) {
+                    if (currentBuzzObject.isPaused()) {
+                        playSong(song);
+                    }
                 }
             }
         };
