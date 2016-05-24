@@ -46,7 +46,7 @@
             <div id="mainwrap">
                 <div id="plwrap">
                     <ul id="plList" ng-repeat="song in currentPlaylist track by $index">
-                        <li ng-show="!song.playing" ng-click="playerBar.songPlayer.play(song)">
+                        <li ng-show="!song.playing" ng-click="playerBar.songPlayer.play(song); customPlaylistMode()">
                             <div class="plItem">
                                 <div class="plNum">{{$index + 1}}</div>
                                 <div class="plTitle">{{song.title}} - {{song.artist}}</div>

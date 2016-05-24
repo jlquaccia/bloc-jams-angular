@@ -1,14 +1,21 @@
 (function() {
-    function PlayerBarCtrl(Fixtures, SongPlayer) {
+    function PlayerBarCtrl($rootScope, Fixtures, SongPlayer) {
         this.albumData = SongPlayer.currentAlbum();
         this.songPlayer = SongPlayer;
         
         if (!this.albumData) {
             this.albumData = JSON.parse(localStorage.getItem("currentAlbum"));
         }
+        
+        $rootScope.customPlaylistMode = function() {
+            SongPlayer.mode = "custom";
+            console.log(SongPlayer.mode);
+        };
+        
+        console.log(SongPlayer.mode);
     }
     
     angular
         .module('blocJams')
-        .controller('PlayerBarCtrl', ['Fixtures', 'SongPlayer', PlayerBarCtrl]);
+        .controller('PlayerBarCtrl', ['$rootScope', 'Fixtures', 'SongPlayer', PlayerBarCtrl]);
 })();

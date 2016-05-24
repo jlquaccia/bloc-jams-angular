@@ -52,6 +52,11 @@
                 return;
             }
         };
+        
+        $scope.albumPlaylistMode = function() {
+            SongPlayer.mode = "album";
+            console.log(SongPlayer.mode);
+        };
     }
     
     angular

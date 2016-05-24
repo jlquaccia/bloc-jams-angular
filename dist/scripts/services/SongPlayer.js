@@ -68,8 +68,11 @@
          * @param {Object} song
          */
         var getSongIndex = function(song) {
-//            return currentAlbum.songs.indexOf(song) || $rootScope.currentPlaylist.indexOf(song);
-            return $rootScope.currentPlaylist.indexOf(song);
+            if (SongPlayer.mode == "album") {
+                return currentAlbum.songs.indexOf(song);
+            } else {
+                return $rootScope.currentPlaylist.indexOf(song);
+            }
         };
         
         
@@ -102,7 +105,7 @@
          * @desc Determines which playlist will be played from, album playlist (album) or custom playlist (custom)
          * @type boolean
          */
-        SongPlayer.mode = "custom";
+        SongPlayer.mode = "album";
         
         /**
          * @desc Current playback time (in seconds) of currently playing song
@@ -187,14 +190,26 @@
             var currentSongIndex = getSongIndex(SongPlayer.currentSong);
             currentSongIndex--;
             
-            if (currentSongIndex < 0) {
-                var song = $rootScope.currentPlaylist[$rootScope.currentPlaylist.length - 1];
-                setSong(song);
-                playSong(song);
-            } else {
-                var song = $rootScope.currentPlaylist[currentSongIndex];
-                setSong(song);
-                playSong(song);
+            if (SongPlayer.mode == "album"){
+                if (currentSongIndex < 0) {
+                    var song = currentAlbum.songs[currentAlbum.songs.length - 1];
+                    setSong(song);
+                    playSong(song);
+                } else {
+                    var song = currentAlbum.songs[currentSongIndex];
+                    setSong(song);
+                    playSong(song);
+                }
+            } else if (SongPlayer.mode == "custom"){
+                if (currentSongIndex < 0) {
+                    var song = $rootScope.currentPlaylist[$rootScope.currentPlaylist.length - 1];
+                    setSong(song);
+                    playSong(song);
+                } else {
+                    var song = $rootScope.currentPlaylist[currentSongIndex];
+                    setSong(song);
+                    playSong(song);
+                }
             }
         };
         
@@ -222,8 +237,17 @@
             var currentSongIndex = getSongIndex(SongPlayer.currentSong);
             currentSongIndex++;
             
-            if (SongPlayer.mode == "custom"){
-                
+            if (SongPlayer.mode == "album"){
+                if (currentSongIndex > currentAlbum.songs.length - 1) {
+                    var song = currentAlbum.songs[0];
+                    setSong(song);
+                    playSong(song);
+                } else {
+                    var song = currentAlbum.songs[currentSongIndex];
+                    setSong(song);
+                    playSong(song);
+                }
+            } else if (SongPlayer.mode == "custom"){
                 if (currentSongIndex > $rootScope.currentPlaylist.length - 1) {
                     var song = $rootScope.currentPlaylist[0];
                     setSong(song);
@@ -233,23 +257,7 @@
                     setSong(song);
                     playSong(song);
                 }
-                
-            } else if (SongPlayer.mode == "album"){
-                
             }
-//            if ($rootScope.currentPlaylist == []) {
-//                var currentSongIndex = getSongIndex(SongPlayer.currentSong);
-//                
-//                if (currentSongIndex > currentAlbum.songs.length - 1) {
-//                    var song = currentAlbum.songs[0];
-//                    setSong(song);
-//                    playSong(song);
-//                } else {
-//                    var song = currentAlbum.songs[currentSongIndex];
-//                    setSong(song);
-//                    playSong(song);
-//                }
-//            }
         };
         
         /**
