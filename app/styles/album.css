@@ -107,6 +107,6 @@ img.album-art-cover {
 .add-song-flash {
     display: none;
     position: absolute;
-    margin: 21px;
+    margin: 21px 0 0 10px;
     animation-delay: .5s;
 }
