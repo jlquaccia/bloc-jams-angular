@@ -1,0 +1,112 @@
+@media (max-width: 1130px) {
+    .plTitle {
+        width: 70%;
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        min-width: 460px;
+        max-width: 700px;
+        position: relative;
+        top: -50px;
+        right: 0;
+    }
+    
+    .collection-album-container .caption {
+        margin-top: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    input[type="text"]:focus {
+        width: 450px;
+    }
+    
+    ::-webkit-input-placeholder {
+        font-size: 30px;
+    }
+    
+    .plTitle {
+        width: 60%;
+    }
+    
+    .profile_image {
+        right: 30px;
+    }
+}
+
+@media (max-width: 750px) {
+    .selectholder {
+        position: absolute;
+        right: -150px;
+        top: 0px;
+    }
+    
+    .md-modal {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    .selectholder {
+        position: relative;
+        left: -148px;
+        top: 70px;
+    }
+}
+
+@media (max-width: 640px) {
+    a.playlist_toggle {
+        position: relative;
+        top: 49px;
+        z-index: 100;
+    }
+    
+    .control-group.volume {
+        position: relative;
+        top: 20px;
+    }
+    
+    .profile_image_wrapper {
+        display: none;
+    }
+    
+    .stats {
+        width: 100%;
+        font-size: 10px;
+    }
+    
+    .player-bar .currently-playing {
+        position: relative;
+        top: -20px;
+    }
+    
+    .mobile_profile_image {
+        display: block;
+    }
+    
+    .header_bg {
+        display: none;
+    }
+}
+
+@media (max-width: 505px) {
+    .selectholder {
+        left: -42px;
+    }
+    
+    input[type="text"]:focus {
+        width: 300px;
+        font-size: 15px;
+    }
+    
+    ::-webkit-input-placeholder {
+        font-size: 15px;
+    }
+    
+    .plTitle {
+        width: 45%;
+    }
+}

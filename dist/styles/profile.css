@@ -19,6 +19,7 @@
 .stats {
     list-style: none;
     margin-top: 10px;
+    width: 130%;
 }
 
 section#user_stats {
@@ -64,7 +65,7 @@ section#user_bio p:nth-child(even) {
     width: 200px;
     height: 200px;
     position: absolute;
-    left: 170px;
+    right: 170px;
     top: 400px;
     border-radius: 50%;
     border: 2px solid #FFF;
@@ -123,4 +124,8 @@ nav a:focus {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     transform: translateY(0);
+}
+
+.mobile_profile_image {
+    display: none;
 }

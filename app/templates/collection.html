@@ -11,7 +11,6 @@
       
         <div class="main">
           <select-dropdown></select-dropdown>
-
         </div>
         
         <div style="clear: both;"></div>
@@ -26,8 +25,6 @@
                 <a ui-sref="album" class="album-name" ng-click="collection.songPlayer.setAlbum(album)">{{album.title}}</a>
                 <br/>
                 <a ui-sref="album"  ng-click="collection.songPlayer.setAlbum(album)">{{album.artist}}</a>
-                <br/>
-                <div star-rating score="album.artistScore" max="5"></div>
                 <br/>
                 {{album.songs.length}} songs
                 <br/>
