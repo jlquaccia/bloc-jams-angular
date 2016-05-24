@@ -142,4 +142,8 @@
     .md-modal {
         width: 100%;
     }
+    
+    h1.no_results {
+        font-size: 40px;
+    }
 }

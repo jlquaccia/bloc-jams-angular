@@ -25,7 +25,6 @@
             }
             
             currentBuzzObject = new buzz.sound(song.audioUrl, {
-                formats: ['mp3'],
                 preload: true
             });
             
@@ -98,6 +97,12 @@
          * @type {Object}
          */
         SongPlayer.currentSong = null;
+        
+        /**
+         * @desc Determines which playlist will be played from, album playlist (album) or custom playlist (custom)
+         * @type boolean
+         */
+        SongPlayer.mode = "custom";
         
         /**
          * @desc Current playback time (in seconds) of currently playing song
@@ -217,7 +222,22 @@
             var currentSongIndex = getSongIndex(SongPlayer.currentSong);
             currentSongIndex++;
             
-//            if ($rootScope.currentPlaylist === []) {
+            if (SongPlayer.mode == "custom"){
+                
+                if (currentSongIndex > $rootScope.currentPlaylist.length - 1) {
+                    var song = $rootScope.currentPlaylist[0];
+                    setSong(song);
+                    playSong(song);
+                } else {
+                    var song = $rootScope.currentPlaylist[currentSongIndex];
+                    setSong(song);
+                    playSong(song);
+                }
+                
+            } else if (SongPlayer.mode == "album"){
+                
+            }
+//            if ($rootScope.currentPlaylist == []) {
 //                var currentSongIndex = getSongIndex(SongPlayer.currentSong);
 //                
 //                if (currentSongIndex > currentAlbum.songs.length - 1) {
@@ -230,16 +250,6 @@
 //                    playSong(song);
 //                }
 //            }
-            
-            if (currentSongIndex > $rootScope.currentPlaylist.length - 1) {
-                var song = $rootScope.currentPlaylist[0];
-                setSong(song);
-                playSong(song);
-            } else {
-                var song = $rootScope.currentPlaylist[currentSongIndex];
-                setSong(song);
-                playSong(song);
-            }
         };
         
         /**

@@ -221,3 +221,9 @@ button#search_submit {
 .selectholder .selectdropdown span:hover {
   background-color: #555;
 }
+
+h1.no_results {
+    font-weight: 100;
+    font-size: 100px;
+    opacity: .5;
+}

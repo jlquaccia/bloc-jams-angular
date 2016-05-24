@@ -17,9 +17,10 @@
    </form>
    
    <hr>
-   
-    <div class="collection-album-container column fourth" ng-repeat="album in collection.albums | filter:gauchoQuery()">
+   <h1 ng-hide="filteredAlbums.length" class="no_results">Nothing here!</h1>
+    <div class="collection-album-container column fourth" ng-repeat="album in filteredAlbums = (collection.albums | filter:gauchoQuery())">
         <img src="{{album.albumArtUrl}}">
+        
         <div class="collection-album-info caption">
             <p>
                 <a ui-sref="album" class="album-name" ng-click="collection.songPlayer.setAlbum(album)">{{album.title}}</a>
