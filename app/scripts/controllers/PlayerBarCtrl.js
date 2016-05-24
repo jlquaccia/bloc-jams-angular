@@ -9,10 +9,7 @@
         
         $rootScope.customPlaylistMode = function() {
             SongPlayer.mode = "custom";
-            console.log(SongPlayer.mode);
         };
-        
-        console.log(SongPlayer.mode);
     }
     
     angular
