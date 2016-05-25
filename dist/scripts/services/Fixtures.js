@@ -12,18 +12,18 @@
                 artistScore: 0,
                 albumScore: 0,
                 songs: [
-                    { title: 'Plastic Soldiers', duration: '5:04', audioUrl: '/assets/music/Fuel.mp3', songScore: 0, artist: 'Portugal. The Man' },
-                    { title: 'Creep in a T-Shirt', duration: '3:53', audioUrl: '/assets/music/Master Of Puppets.mp3', songScore: 0, artist: 'Portugal. The Man' },
-                    { title: 'Evil Friends', duration: '3:35', audioUrl: '/assets/music/Ride The Lightning.mp3', songScore: 0, artist: 'Portugal. The Man' },
-                    { title: 'Modern Jesus', duration: '3:14', audioUrl: '/assets/music/The Unforgiven.mp3', songScore: 0, artist: 'Portugal. The Man' },
-                    { title: 'Hip Hop Kids', duration: '3:28', audioUrl: '/assets/music/witj.mp3', songScore: 0, artist: 'Portugal. The Man' },
-                    { title: 'Atomic Man', duration: '3:47', audioUrl: '/assets/music/Fuel.mp3', songScore: 0, artist: 'Portugal. The Man' },
-                    { title: 'Sea of Air', duration: '4:22', audioUrl: '/assets/music/Master Of Puppets.mp3', songScore: 0, artist: 'Portugal. The Man' },
-                    { title: 'Waves', duration: '4:51', audioUrl: '/assets/music/Ride The Lightning', songScore: 0, artist: 'Portugal. The Man' },
-                    { title: 'Holy Roller (Hallelujah)', duration: '3:21', audioUrl: '/assets/music/The Unforgiven', songScore: 0, artist: 'Portugal. The Man' },
-                    { title: 'Someday Believers', duration: '3:53', audioUrl: '/assets/music/witj', songScore: 0, artist: 'Portugal. The Man' },
-                    { title: 'Purple Yellow Red and Blue', duration: '4:10', audioUrl: '/assets/music/The Unforgiven', songScore: 0, artist: 'Portugal. The Man' },
-                    { title: 'Smile', duration: '4:51', audioUrl: '/assets/music/witj', songScore: 0, artist: 'Portugal. The Man' }
+                    { title: 'Plastic Soldiers', duration: '5:04', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/evil_friends/01+Plastic+Soldiers.m4a', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Creep in a T-Shirt', duration: '3:53', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/evil_friends/02+Creep+In+a+T-Shirt.m4a', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Evil Friends', duration: '3:35', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/evil_friends/03+Evil+Friends.m4a', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Modern Jesus', duration: '3:14', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/evil_friends/04+Modern+Jesus.m4a', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Hip Hop Kids', duration: '3:28', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/evil_friends/05+Hip+Hop+Kids.m4a', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Atomic Man', duration: '3:47', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/evil_friends/06+Atomic+Man.m4a', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Sea of Air', duration: '4:22', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/evil_friends/07+Sea+of+Air.m4a', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Waves', duration: '4:51', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/evil_friends/08+Waves.m4a', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Holy Roller (Hallelujah)', duration: '3:21', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/evil_friends/09+Holy+Roller+(Hallelujah).m4a', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Someday Believers', duration: '3:53', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/evil_friends/10+Someday+Believers.m4a', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Purple Yellow Red and Blue', duration: '4:10', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/evil_friends/11+Purple+Yellow+Red+and+Blue.m4a', songScore: 0, artist: 'Portugal. The Man' },
+                    { title: 'Smile', duration: '4:51', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/evil_friends/12+Smile.m4a', songScore: 0, artist: 'Portugal. The Man' }
                 ]
             },
             
