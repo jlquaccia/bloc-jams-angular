@@ -36,16 +36,16 @@
                 artistScore: 0,
                 albumScore: 0,
                 songs: [
-                    { title: 'Pink', duration: '6:27', audioUrl: '/assets/music/The Unforgiven', songScore: 0 },
-                    { title: 'Ring, Ring, Ring', duration: '5:01', songScore: 0 },
-                    { title: 'Fits in Your Pocket', duration: '3:21', songScore: 0 },
-                    { title: 'Can You Hear Me Now?', duration: '3:14', songScore: 0 },
-                    { title: 'Wrong Phone Number', duration: '2:15', songScore: 0 },
-                    { title: 'Hello, Operator?', duration: '1:01', songScore: 0 },
-                    { title: 'Ring, Ring, Ring', duration: '5:01', songScore: 0 },
-                    { title: 'Fits in Your Pocket', duration: '3:21', songScore: 0 },
-                    { title: 'Can You Hear Me Now?', duration: '3:14', songScore: 0 },
-                    { title: 'Wrong Phone Number', duration: '2:15', songScore: 0 }
+                    { title: 'Son Et Lumière', duration: '1:35', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/deloused_in_the_comatorium/01+Son+Et+Lumie%CC%80re.m4a', songScore: 0, artist: 'The Mars Volta' },
+                    { title: 'Inertiatic ESP', duration: '4:24', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/deloused_in_the_comatorium/02+Inertiatic+ESP.m4a', songScore: 0, artist: 'The Mars Volta' },
+                    { title: 'Roulette Dares (The Haunt Of)', duration: '7:31', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/deloused_in_the_comatorium/03+Roulette+Dares+(The+Haunt+Of).m4a', songScore: 0, artist: 'The Mars Volta' },
+                    { title: 'Tira Me A Las Aranas', duration: '1:29', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/deloused_in_the_comatorium/04+Tira+Me+A+Las+Aranas.m4a', songScore: 0, artist: 'The Mars Volta' },
+                    { title: 'Drunkship of Lanterns', duration: '7:06', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/deloused_in_the_comatorium/05+Drunkship+of+Lanterns.m4a', songScore: 0, artist: 'The Mars Volta' },
+                    { title: 'Eriatarka', duration: '6:20', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/deloused_in_the_comatorium/06+Eriatarka.m4a', songScore: 0, artist: 'The Mars Volta' },
+                    { title: 'Cicatriz ESP', duration: '12:29', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/deloused_in_the_comatorium/07+Cicatriz+ESP.m4a', songScore: 0, artist: 'The Mars Volta' },
+                    { title: 'This Apparatus Must Be Unearthed', duration: '4:58', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/deloused_in_the_comatorium/08+This+Apparatus+Must+Be+Unearthed.m4a', songScore: 0, artist: 'The Mars Volta' },
+                    { title: 'Televators', duration: '6:19', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/deloused_in_the_comatorium/09+Televators.m4a', songScore: 0, artist: 'The Mars Volta' },
+                    { title: 'Take the Veil Cerpin Taxt', duration: '8:42', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/deloused_in_the_comatorium/10+Take+the+Veil+Cerpin+Taxt.m4a', songScore: 0, artist: 'The Mars Volta' }
                 ]
             },
             
@@ -132,11 +132,11 @@
             },
             
             {
-                title: 'The Best of Talking Heads',
-                artist: 'Talking Heads',
-                label: 'Warner Bros. Manufactured by Warner Strategic Marketing',
-                year: '2004',
-                albumArtUrl: '/assets/images/artist_album_covers/the_best_of_talking_heads.jpeg',
+                title: 'Purple Rain (Soundtrack from the Motion Picture)',
+                artist: 'Prince & The Revolution',
+                label: 'Warner Bros. Records',
+                year: '1984',
+                albumArtUrl: '/assets/images/artist_album_covers/Purple Rain (Soundtrack from the Motion Picture).jpg',
                 artistScore: 0,
                 albumScore: 0,
                 songs: [
