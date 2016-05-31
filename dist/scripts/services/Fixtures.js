@@ -140,24 +140,15 @@
                 artistScore: 0,
                 albumScore: 0,
                 songs: [
-                    { title: 'Hello, Operator?', duration: '1:01', songScore: 0 },
-                    { title: 'Ring, Ring, Ring', duration: '5:01', songScore: 0 },
-                    { title: 'Fits in Your Pocket', duration: '3:21', songScore: 0 },
-                    { title: 'Can You Hear Me Now?', duration: '3:14', songScore: 0 },
-                    { title: 'Wrong Phone Number', duration: '2:15', songScore: 0 },
-                    { title: 'Hello, Operator?', duration: '1:01', songScore: 0 },
-                    { title: 'Ring, Ring, Ring', duration: '5:01', songScore: 0 },
-                    { title: 'Fits in Your Pocket', duration: '3:21', songScore: 0 },
-                    { title: 'Can You Hear Me Now?', duration: '3:14', songScore: 0 },
-                    { title: 'Wrong Phone Number', duration: '2:15', songScore: 0 },
-                    { title: 'Hello, Operator?', duration: '1:01', songScore: 0 },
-                    { title: 'Ring, Ring, Ring', duration: '5:01', songScore: 0 },
-                    { title: 'Fits in Your Pocket', duration: '3:21', songScore: 0 },
-                    { title: 'Can You Hear Me Now?', duration: '3:14', songScore: 0 },
-                    { title: 'Wrong Phone Number', duration: '2:15', songScore: 0 },
-                    { title: 'Fits in Your Pocket', duration: '3:21', songScore: 0 },
-                    { title: 'Can You Hear Me Now?', duration: '3:14', songScore: 0 },
-                    { title: 'Wrong Phone Number', duration: '2:15', songScore: 0 }
+                    { title: 'Let\'s Go Crazy', duration: '4:40', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/purple_rain/01+Let%27s+Go+Crazy.m4a', songScore: 0, artist: 'Prince & The Revolution' },
+                    { title: 'Take Me With U', duration: '3:54', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/purple_rain/02+Take+Me+With+U.m4a', songScore: 0, artist: 'Prince & The Revolution' },
+                    { title: 'The Beautiful Ones', duration: '5:14', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/purple_rain/03+The+Beautiful+Ones.m4a', songScore: 0, artist: 'Prince & The Revolution' },
+                    { title: 'Computer Blue', duration: '4:00', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/purple_rain/04+Computer+Blue.m4a', songScore: 0, artist: 'Prince & The Revolution' },
+                    { title: 'Darling Nikki', duration: '4:14', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/purple_rain/05+Darling+Nikki.m4a', songScore: 0, artist: 'Prince & The Revolution' },
+                    { title: 'When Doves Cry', duration: '5:53', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/purple_rain/06+When+Doves+Cry.m4a', songScore: 0, artist: 'Prince & The Revolution' },
+                    { title: 'I Would Die 4 U', duration: '2:59', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/purple_rain/07+I+Would+Die+4+U.m4a', songScore: 0, artist: 'Prince & The Revolution' },
+                    { title: 'Baby I\'m a Star', duration: '4:24', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/purple_rain/08+Baby+I%27m+a+Star.m4a', songScore: 0, artist: 'Prince & The Revolution' },
+                    { title: 'Purple Rain', duration: '8:42', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/purple_rain/09+Purple+Rain.m4a', songScore: 0, artist: 'Prince & The Revolution' }
                 ]
             },
             
