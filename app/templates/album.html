@@ -6,7 +6,7 @@
         <div class="album-view-details column half">
             <h2 class="album-view-title">{{album.albumData.title}}</h2>
             <h3 class="album-view-artist">{{album.albumData.artist}}</h3>
-            <h4 star-rating score="album.albumData.albumScore" max="5" class="album-view-rating"></h4>
+            <h4 star-rating score="album.albumData.albumScore" max="5" type='"album"' name='album.albumData.title' class="album-view-rating"></h4>
             <h5 class="album-view-release-info">{{album.albumData.year}} {{album.albumData.label}}</h5>
         </div>
     </section>
@@ -18,7 +18,7 @@
                 <a class="album-song-button" ng-show="song.playing" ng-click="album.songPlayer.pause(song)"><span class="ion-pause"></span></a>
             </td>
             <td class="song-item-title">{{song.title}}</td>
-            <td star-rating score="song.songScore" max="5" class="song-item-rating"></td>
+            <td star-rating score="song.songScore" max="5" type='"song"' name='song.title' class="song-item-rating"></td>
             <td class="song-item-duration">{{song.duration}}</td>
             <td class="song-item-add-to-playlist"><i class="ion-ios-plus-outline plus_icon" ng-click="addSongToPlaylist(song); addSongFlashMessage($index)"></i></td>
             <td class="add-song-flash animated" id="{{$index + 1}}">Song Added!</td>
