@@ -58,14 +58,14 @@
                 artistScore: 0,
                 albumScore: 0,
                 songs: [
-                    { title: 'Hello, Operator?', duration: '1:01', songScore: 0 },
-                    { title: 'Ring, Ring, Ring', duration: '5:01', songScore: 0 },
-                    { title: 'Fits in Your Pocket', duration: '3:21', songScore: 0 },
-                    { title: 'Can You Hear Me Now?', duration: '3:14', songScore: 0 },
-                    { title: 'Wrong Phone Number', duration: '2:15', songScore: 0 },
-                    { title: 'Hello, Operator?', duration: '1:01', songScore: 0 },
-                    { title: 'Ring, Ring, Ring', duration: '5:01', songScore: 0 },
-                    { title: 'Fits in Your Pocket', duration: '3:21', songScore: 0 }
+                    { title: 'Fight Fire With Fire', duration: '4:45', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/ride_the_lightning/01+Fight+Fire+With+Fire+(Remastered).m4a', songScore: 0, artist: 'Metallica' },
+                    { title: 'Ride the Lightning', duration: '6:37', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/ride_the_lightning/02+Ride+the+Lightning+(Remastered).m4a', songScore: 0, artist: 'Metallica' },
+                    { title: 'For Whom the Bell Tolls', duration: '5:10', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/ride_the_lightning/03+For+Whom+the+Bell+Tolls+(Remastered).m4a', songScore: 0, artist: 'Metallica' },
+                    { title: 'Fade to Black', duration: '6:57', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/ride_the_lightning/04+Fade+to+Black+(Remastered).m4a', songScore: 0, artist: 'Metallica' },
+                    { title: 'Trapped Under Ice', duration: '4:04', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/ride_the_lightning/05+Trapped+Under+Ice+(Remastered).m4a', songScore: 0, artist: 'Metallica' },
+                    { title: 'Escape', duration: '4:24', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/ride_the_lightning/06+Escape+(Remastered).m4a', songScore: 0, artist: 'Metallica' },
+                    { title: 'Creeping Death', duration: '6:36', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/ride_the_lightning/07+Creeping+Death+(Remastered).m4a', songScore: 0, artist: 'Metallica' },
+                    { title: 'The Call of Ktulu', duration: '8:53', audioUrl: 'https://s3-us-west-1.amazonaws.com/bloc-jams/ride_the_lightning/08+The+Call+of+Ktulu+(Remastered).m4a', songScore: 0, artist: 'Metallica' }
                 ]
             },
             
